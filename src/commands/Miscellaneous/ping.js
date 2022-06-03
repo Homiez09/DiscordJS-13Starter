@@ -5,7 +5,7 @@ module.exports = {
   description: 'ปิงปอง ปองปิง',
   category: 'miscellaneous',
   botPerms: [],
-  run: async (interaction, client, word) => {
+  run: async (interaction, client) => {
     const embed = new MessageEmbed()
       .setColor('GREEN')
       .setTitle(`pong!`)
