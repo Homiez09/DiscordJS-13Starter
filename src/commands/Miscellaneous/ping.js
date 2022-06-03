@@ -8,8 +8,8 @@ module.exports = {
   run: async (interaction, client, word) => {
     const embed = new MessageEmbed()
       .setColor('GREEN')
-      .setTitle(eval(word.ping.embed.title))
-      .setDescription(eval(word.ping.embed.description))
+      .setTitle(`pong!`)
+      .setDescription(`Latency is ${Date.now() - interaction.createdTimestamp}ms. API Latency is ${Math.round(client.ws.ping)}ms`)
       .setFooter(
         `Requested by ${interaction.user.tag}`,
         interaction.user.displayAvatarURL(),
